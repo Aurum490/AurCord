@@ -42,14 +42,6 @@
 [![Packaging status](https://repology.org/badge/vertical-allrepos/AurCord.svg)](https://repology.org/project/AurCord/versions)
 
 ### Windows
-<a href="https://microsoft.com/store/apps/9PFHLJFD7KJT">
-   <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Download AurCord" />
-</a>
-
-If you're using an older version of Windows, you need to use [pre-built installers](https://www.AurCord.app/download).
-
-### Flatpak
-<a href='https://flathub.org/apps/details/xyz.AurCord.AurCord'><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.svg'/></a>
 
 ### Debian, Ubuntu and Raspbian repository
 AurCord is available on our official repositories for `apt` package manager. By using this method you'll receive automatic updates and get all the dependencies. Run the following commands to install AurCord from them:
