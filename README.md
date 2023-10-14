@@ -1,14 +1,11 @@
-
-<div align="center">
-<img src="https://armcord.app/logo.png" width="520">
- <br>ArmCord is a custom client designed to enhance your Discord experience while keeping everything lightweight. 
+ <br>AurCord is a custom client designed to enhance your Discord experience while keeping everything lightweight. Based of ArmCord.
 </div>
 
 # Features
 
 - **Standalone client** 
 
-   ArmCord is built as a standalone client and doesn't rely on the original Discord client in any way.
+   AurCord is built as a standalone client and doesn't rely on the original Discord client in any way.
 
 - **Various mods built-in**
  
@@ -16,97 +13,97 @@
 
 - **Themes**
 
-   ArmCord natively supports theming of the entire app, you can easily import BetterDiscord themes and manage them
+   AurCord natively supports theming of the entire app, you can easily import BetterDiscord themes and manage them
 
 - **Made for Privacy™**
 
-   ArmCord automatically blocks all of Discord's trackers; even without any client mods, you can feel safe and secure!
+   AurCord automatically blocks all of Discord's trackers; even without any client mods, you can feel safe and secure!
 
 - **Supports Rich Presence**
 
-   Unlike other clients, ArmCord supports rich presence (game activity) out of the box thanks to [arRPC](https://arrpc.openasar.dev).
+   Unlike other clients, AurCord supports rich presence (game activity) out of the box thanks to [arRPC](https://arrpc.openasar.dev).
    
 - **Mobile support**
 
-   ArmCord has **experimental** mobile support for phones running Linux such as the PinePhone. While this is still far from an ideal solution, we're slowly trying to improve it.
+   AurCord has **experimental** mobile support for phones running Linux such as the PinePhone. While this is still far from an ideal solution, we're slowly trying to improve it.
 
 - **Much more stable**
 
-   ArmCord is using a newer build of Electron than the stock Discord app. This means you can have a much more stable and secure experience, along with slightly better performance.
+   AurCord is using a newer build of Electron than the stock Discord app. This means you can have a much more stable and secure experience, along with slightly better performance.
 
 
 - **Cross-platform support!**
 
-   ArmCord was originally created for ARM64 Linux devices since Discord doesn't support them. We soon decided to support every platform that [Electron supports](https://github.com/electron/electron#platform-support)!
+   AurCord was originally created for ARM64 Linux devices since Discord doesn't support them. We soon decided to support every platform that [Electron supports](https://github.com/electron/electron#platform-support)!
   
 # How to run/install it?
 
 ## Packaging status
-[![Packaging status](https://repology.org/badge/vertical-allrepos/armcord.svg)](https://repology.org/project/armcord/versions)
+[![Packaging status](https://repology.org/badge/vertical-allrepos/AurCord.svg)](https://repology.org/project/AurCord/versions)
 
 ### Windows
 <a href="https://microsoft.com/store/apps/9PFHLJFD7KJT">
-   <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Download ArmCord" />
+   <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Download AurCord" />
 </a>
 
-If you're using an older version of Windows, you need to use [pre-built installers](https://www.armcord.app/download).
+If you're using an older version of Windows, you need to use [pre-built installers](https://www.AurCord.app/download).
 
 ### Flatpak
-<a href='https://flathub.org/apps/details/xyz.armcord.ArmCord'><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.svg'/></a>
+<a href='https://flathub.org/apps/details/xyz.AurCord.AurCord'><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.svg'/></a>
 
 ### Debian, Ubuntu and Raspbian repository
-ArmCord is available on our official repositories for `apt` package manager. By using this method you'll receive automatic updates and get all the dependencies. Run the following commands to install ArmCord from them:
+AurCord is available on our official repositories for `apt` package manager. By using this method you'll receive automatic updates and get all the dependencies. Run the following commands to install AurCord from them:
 ```sh
-curl -fsSL https://eu.armcord.app/pgp-key.public | sudo gpg --dearmor -o /usr/share/keyrings/armcord.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/armcord.gpg] https://eu.armcord.app/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/armcord.list
+curl -fsSL https://eu.AurCord.app/pgp-key.public | sudo gpg --dearmor -o /usr/share/keyrings/AurCord.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/AurCord.gpg] https://eu.AurCord.app/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/AurCord.list
 sudo apt update
-sudo apt install armcord
+sudo apt install AurCord
 ```
 ### Snap package
-ArmCord is also available on the Snap store [here](https://snapcraft.io/armcord).   
-<a href="https://snapcraft.io/armcord">
+AurCord is also available on the Snap store [here](https://snapcraft.io/AurCord).   
+<a href="https://snapcraft.io/AurCord">
 <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" />
 </a>  
 
-Similar to `armcord-git` on AUR, you can install the latest dev builds through snaps by running this command:
+Similar to `AurCord-git` on AUR, you can install the latest dev builds through snaps by running this command:
 ```shell
-sudo snap install armcord --channel=latest/edge
+sudo snap install AurCord --channel=latest/edge
 ```
 Snapd will automatically update the app including developer builds.
 ### Winget Package
-ArmCord is also available on the [winget-pkgs](https://github.com/microsoft/winget-pkgs) repository:
+AurCord is also available on the [winget-pkgs](https://github.com/microsoft/winget-pkgs) repository:
 ```
-winget install ArmCord.ArmCord
+winget install AurCord.AurCord
 ```
 ### Scoop package
-ArmCord is also available on [Scoop extras](https://github.com/ScoopInstaller/Extras) repo:
+AurCord is also available on [Scoop extras](https://github.com/ScoopInstaller/Extras) repo:
 ```
 scoop bucket add extras
 ```
 ```
-scoop install armcord
+scoop install AurCord
 ```
 ### AUR Package
-ArmCord is also available on the Arch User Repository (AUR):
-- [armcord-bin](https://aur.archlinux.org/packages/armcord-bin) - ArmCord Release ~ Static binary from release, stable release only
-- [armcord-git](https://aur.archlinux.org/packages/armcord-git) - ArmCord Dev ~ Latest devbuild built from source (takes ~1 minute) using the system electron
+AurCord is also available on the Arch User Repository (AUR):
+- [AurCord-bin](https://aur.archlinux.org/packages/AurCord-bin) - AurCord Release ~ Static binary from release, stable release only
+- [AurCord-git](https://aur.archlinux.org/packages/AurCord-git) - AurCord Dev ~ Latest devbuild built from source (takes ~1 minute) using the system electron
 
 Install it via an AUR helper tool like `yay`.
 
-**Example:** `yay -S armcord-bin`
+**Example:** `yay -S AurCord-bin`
 ### FreeBSD
-You can also get ArmCord running on FreeBSD by following [these instructions](https://gist.github.com/txxlchains/4d29c982ac85d5d26f98a51040b5de37).
+You can also get AurCord running on FreeBSD by following [these instructions](https://gist.github.com/txxlchains/4d29c982ac85d5d26f98a51040b5de37).
 ### Pi-Apps
-ArmCord is also available in [Pi-Apps](https://github.com/Botspot/pi-apps).  
+AurCord is also available in [Pi-Apps](https://github.com/Botspot/pi-apps).  
 [![badge](https://github.com/Botspot/pi-apps/blob/master/icons/badge.png?raw=true)](https://github.com/Botspot/pi-apps)
 
 ### Pre-built binaries:
  Check the **releases tab** for precompiled packages for Linux, Windows, and Mac OS. Alternatively, use our Sourceforge mirror.  
- <a href="https://sourceforge.net/projects/armcord/files/latest/download"><img alt="Download ArmCord" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
+ <a href="https://sourceforge.net/projects/AurCord/files/latest/download"><img alt="Download AurCord" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
 
 ### Compiling:
- Alternatively, you can run ArmCord from source ([NodeJS](https://nodejs.dev), [pnpm](https://pnpm.io/installation#using-npm), and [rust toolchain](https://www.rust-lang.org/tools/install) are required):    
- 1. Clone ArmCord repo: `git clone https://github.com/ArmCord/ArmCord.git`    
+ Alternatively, you can run AurCord from source ([NodeJS](https://nodejs.dev), [pnpm](https://pnpm.io/installation#using-npm), and [rust toolchain](https://www.rust-lang.org/tools/install) are required):    
+ 1. Clone AurCord repo: `git clone https://github.com/AurCord/AurCord.git`    
  2. Run `pnpm install` to install dependencies   
  3. Build with `npm run build`   
  4. Compile/Package with `npm run package`    
@@ -117,28 +114,28 @@ ArmCord is also available in [Pi-Apps](https://github.com/Botspot/pi-apps).
 
 [![](https://dcbadge.vercel.app/api/server/TnhxcqynZ2)](https://discord.gg/TnhxcqynZ2)
 ## Will I get banned for using this?   
-- You are breaking [Discord ToS](https://discord.com/terms#software-in-discord%E2%80%99s-services) by using ArmCord, but no one has been banned from using it or any of the client mods included.
+- You are breaking [Discord ToS](https://discord.com/terms#software-in-discord%E2%80%99s-services) by using AurCord, but no one has been banned from using it or any of the client mods included.
 
 ## Can I use this on anything other than ARM?
-- Yes! ArmCord should work normally under Windows, MacOS, and Linux as long as it has Electron support.  
+- Yes! AurCord should work normally under Windows, MacOS, and Linux as long as it has Electron support.  
 
 ## How can I access the settings?
-- Either right-click on the tray icon and click `Open Settings` or open Discord settings and scroll down the sidebar until you see information about versions. Click on the ArmCord version and the settings window will pop out.
+- Either right-click on the tray icon and click `Open Settings` or open Discord settings and scroll down the sidebar until you see information about versions. Click on the AurCord version and the settings window will pop out.
 
 ## How does this work?   
 - We are using the official web app and wrapping it up in Electron. While you may think this is lame and done like thousands of times before, what makes us unique is that we actually strive for creating a customized experience. You can very easily load themes and mods with no installers/injectors. You can even make the client have transparency effects and follow the fluent design of Windows! At its core, it's just a simple web wrapper, however, we applied many patches to make this work well for you <3
 
 ## Why is macOS support lacking?
-- Due to me not owning any macOS device, I can't easily debug/test or do anything related to it. Of course, VMs and Hackintosh machines exist but from my experience, these are unreliable or very time-consuming to set up and maintain. While ArmCord "works" on macOS you may encounter weird issues or inconsistencies with other apps in terms of how they behave (for example macOS lack of tray).
+- Due to me not owning any macOS device, I can't easily debug/test or do anything related to it. Of course, VMs and Hackintosh machines exist but from my experience, these are unreliable or very time-consuming to set up and maintain. While AurCord "works" on macOS you may encounter weird issues or inconsistencies with other apps in terms of how they behave (for example macOS lack of tray).
 
 ## Where can I find the source code?
-- The source code is on [GitHub](https://github.com/ArmCord/ArmCord/).
+- The source code is on [GitHub](https://github.com/AurCord/AurCord/).
 
 ## Where can I translate this?
-- Translations are done using our [Weblate page](https://hosted.weblate.org/projects/armcord/armcord/).
+- Translations are done using our [Weblate page](https://hosted.weblate.org/projects/AurCord/AurCord/).
 
 # Credits
-- [ArmCord UI design, branding, and a few features](https://github.com/kckarnige)
+- [AurCord UI design, branding, and a few features](https://github.com/kckarnige)
 - [OpenAsar](https://github.com/GooseMod/OpenAsar)
 - [arRPC (for Rich Presence)](https://github.com/OpenAsar/arrpc)
 - (pre v3.1.0) [Cumcord](https://github.com/Cumcord/Cumcord)
@@ -148,4 +145,4 @@ ArmCord is also available in [Pi-Apps](https://github.com/Botspot/pi-apps).
 - (Pre v3.0.0) [custom-electron-titlebar](https://github.com/AlexTorresSk/custom-electron-titlebar)
 - [electron-builder](https://electron.build)
   
-Discord is trademark of Discord Inc. ArmCord is not affiliated with or endorsed by Discord Inc. 
+Discord is trademark of Discord Inc. AurCord is not affiliated with or endorsed by Discord Inc. 
